@@ -2,10 +2,10 @@
 
 from django.conf.urls import url, patterns, include
 from rest_framework.routers import DefaultRouter
-from checkpoints.views import CurrentView, CurrentScoreView
+from score.views import ScoreView, CurrentScoreView
 
 router = DefaultRouter()
-router.register(r'scores', CurrentView)
+router.register(r'scores', ScoreView)
 router.register(r'currentscores', CurrentScoreView)
 
 urlpatterns = patterns(
