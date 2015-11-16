@@ -1,0 +1,4 @@
+*.pyc
+ecoloscore/settings.py
+ecoloscore/wsgi.py
+*/migrations/*
