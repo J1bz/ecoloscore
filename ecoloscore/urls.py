@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^checkpoints/', include('checkpoints.urls')),
+    url(r'^coffeecups/', include('coffeecups.urls')),
     url(r'^score/', include('score.urls')),
 ]
 
