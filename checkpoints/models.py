@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from django.db.models import (Model, ForeignKey, CharField, TextField,
-                              DateTimeField)
+                              DateTimeField, IntegerField)
 from django.forms import ModelForm, CharField as formCharField, Textarea
 
 from django.contrib.auth.models import User
@@ -10,6 +10,7 @@ from django.contrib.auth.models import User
 class Point(Model):
     name = CharField(max_length=32)
     comment = TextField(blank=True)
+    bonus = IntegerField()
 
     def __unicode__(self):
         return self.name

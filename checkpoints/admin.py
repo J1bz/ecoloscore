@@ -6,8 +6,8 @@ from checkpoints.models import Point, PointForm, Check, CheckForm
 
 class PointAdmin(admin.ModelAdmin):
     form = PointForm
-    list_display = ('id', 'name', 'comment',)
-    search_fields = ('name', 'comment',)
+    list_display = ('id', 'name', 'comment', 'bonus',)
+    search_fields = ('name', 'comment', 'bonus',)
 
 
 class CheckAdmin(admin.ModelAdmin):
