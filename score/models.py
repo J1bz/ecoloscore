@@ -17,6 +17,12 @@ class Score(Model):
     value = IntegerField()
     date = DateTimeField(auto_now_add=True)
 
+    def save(self, *args, **kwargs):
+        user_current_score = CurrentScore.objects.get(user=self.user)
+        user_current_score.update(self.value)
+
+        super(Score, self).save(*args, **kwargs)
+
     def __unicode__(self):
         return '{} scored {} ({})'.format(self.user, self.value, self.game)
 
@@ -31,7 +37,7 @@ class CurrentScore(Model):
     user = OneToOneField(User)
     value = IntegerField()
 
-    def add(self, value):
+    def update(self, value):
         self.value += value
         self.save()
 
