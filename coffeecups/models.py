@@ -12,7 +12,7 @@ class Take(Model):
     date = DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
-        return '{} took a cup at {}'.format(self.user, self.date)
+        return '{} took a cup at {}'.format(self.user, self.date)
 
 
 class TakeForm(ModelForm):
