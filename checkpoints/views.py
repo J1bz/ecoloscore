@@ -4,7 +4,7 @@ from rest_framework.authentication import (
     TokenAuthentication, SessionAuthentication)
 from rest_framework.decorators import (
     authentication_classes, permission_classes)
-from rest_framework.viewsets import ReadOnlyModelViewSet
+from rest_framework.viewsets import ModelViewSet
 from rest_framework.filters import DjangoFilterBackend, SearchFilter
 
 from common.permissions import IsAdminOrAuthentReadOnly
@@ -15,7 +15,7 @@ from checkpoints.filters import PointFilter, CheckFilter
 
 @authentication_classes((TokenAuthentication, SessionAuthentication,))
 @permission_classes((IsAdminOrAuthentReadOnly,))
-class PointView(ReadOnlyModelViewSet):
+class PointView(ModelViewSet):
     queryset = Point.objects.all()
     serializer_class = PointSerializer
     filter_backends = (DjangoFilterBackend, SearchFilter,)
@@ -25,7 +25,7 @@ class PointView(ReadOnlyModelViewSet):
 
 @authentication_classes((TokenAuthentication, SessionAuthentication,))
 @permission_classes((IsAdminOrAuthentReadOnly,))
-class CheckView(ReadOnlyModelViewSet):
+class CheckView(ModelViewSet):
     queryset = Check.objects.all()
     serializer_class = CheckSerializer
     filter_backends = (DjangoFilterBackend, SearchFilter,)
