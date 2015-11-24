@@ -22,7 +22,7 @@ class PointForm(ModelForm):
 
     class Meta:
         model = Point
-        fields = ('name', 'comment',)
+        fields = ('name', 'comment', 'bonus',)
 
 
 class Check(Model):
