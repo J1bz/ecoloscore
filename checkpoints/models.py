@@ -11,6 +11,7 @@ from score.models import Score
 class Point(Model):
     name = CharField(max_length=32)
     comment = TextField(blank=True)
+    arduino = CharField(max_length=64)
     bonus = IntegerField()
 
     def __unicode__(self):
@@ -22,7 +23,7 @@ class PointForm(ModelForm):
 
     class Meta:
         model = Point
-        fields = ('name', 'comment', 'bonus',)
+        fields = ('name', 'comment', 'arduino', 'bonus',)
 
 
 class Check(Model):

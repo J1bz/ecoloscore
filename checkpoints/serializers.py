@@ -7,7 +7,7 @@ from checkpoints.models import Point, Check
 class PointSerializer(ModelSerializer):
     class Meta:
         model = Point
-        fields = ('id', 'name', 'comment', 'bonus',)
+        fields = ('id', 'name', 'comment', 'arduino', 'bonus',)
 
 
 class CheckSerializer(ModelSerializer):

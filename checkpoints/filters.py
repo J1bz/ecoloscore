@@ -9,6 +9,9 @@ class PointFilter(FilterSet):
                       label='name icontains filter')
     comment = CharFilter(name='comment', lookup_type='icontains',
                          label='comment icontains filter')
+    arduino = CharFilter(name='arduino', label='arduino contains filter')
+    arduino_sub = CharFilter(name='arduino', lookup_type='icontains',
+                             label='arduino icontains filter')
     bonus = NumberFilter(name='bonus',
                          label='filter points where bonus is equal to value')
 
@@ -17,6 +20,8 @@ class PointFilter(FilterSet):
         fields = (
             'name',
             'comment',
+            'arduino',
+            'arduino_sub',
             'bonus',
         )
 
