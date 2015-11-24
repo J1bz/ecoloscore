@@ -31,7 +31,7 @@ class Check(Model):
     date = DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
-        Score(user=self.user, value=self.point.bonus, game='c').save()
+        Score(user=self.user, value=self.point.bonus, game='p').save()
 
         super(Check, self).save(*args, **kwargs)
 
