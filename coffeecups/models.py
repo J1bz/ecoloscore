@@ -10,6 +10,8 @@ from django.forms import ModelForm, CharField as formCharField, Textarea
 from django.contrib.auth.models import User
 from score.models import Score
 
+# TODO: make sure that a user can't be in 2 cup policies
+
 
 class Take(Model):
     user = ForeignKey(User)
@@ -28,15 +30,14 @@ class Take(Model):
                                                  user=self.user)
                 taken_cups_number = len(taken_cups)
 
-                policy_cups_bonus = policy.take.all()
-                if taken_cups_number < len(policy_cups_bonus):
-                    points = policy_cups_bonus[taken_cups_number + 1]
+                if taken_cups_number == 0:
+                    points = policy.take_of_the_day
 
                 else:
-                    points = policy_cups_bonus.reverse()[0]
+                    points = policy.take_malus
 
                 s = Score.objects.create(user=self.user, game='c',
-                                         value=points.value)
+                                         value=points)
                 s.save()
 
             except ObjectDoesNotExist:
@@ -78,7 +79,7 @@ class Throw(Model):
                     points = policy.throw
 
                     s = Score.objects.create(user=self.user, game='c',
-                                             value=points.value)
+                                             value=points)
                     s.save()
 
                     # Throw is not saved if it is just a throw that is not
@@ -99,28 +100,14 @@ class ThrowForm(ModelForm):
         fields = ('user',)
 
 
-class Points(Model):
-    value = IntegerField()
-
-    def __unicode__(self):
-        return 'Cup points: {}'.format(self.value)
-
-    class Meta:
-        verbose_name_plural = 'points'
-
-
-class PointsForm(ModelForm):
-    class Meta:
-        model = Points
-        fields = ('value',)
-
-
 class CupPolicy(Model):
     name = CharField(max_length=32)
     comment = TextField(blank=True)
     users = ManyToManyField(User, blank=True)
-    take = ManyToManyField(Points, related_name='take')
-    throw = ForeignKey(Points, related_name='throw')
+    no_takes = IntegerField()
+    take_of_the_day = IntegerField()
+    take_malus = IntegerField()
+    throw = IntegerField()
 
     def __unicode__(self):
         return 'Cup policy: {}'.format(self.name)
@@ -134,4 +121,12 @@ class CupPolicyForm(ModelForm):
 
     class Meta:
         model = CupPolicy
-        fields = ('name', 'comment', 'users', 'take', 'throw',)
+        fields = (
+            'name',
+            'comment',
+            'users',
+            'no_takes',
+            'take_of_the_day',
+            'take_malus',
+            'throw',
+        )

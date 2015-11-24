@@ -54,10 +54,14 @@ class CupPolicyFilter(FilterSet):
     comment = CharFilter(name='comment', lookup_type='icontains',
                          label='comment icontains filter')
     user = NumberFilter(name='users', label='filter by user id in users')
-    take = NumberFilter(name='take__value',
-                        label='filter if value is in take values')
-    throw = NumberFilter(name='throw__value',
-                         label='filter if value is in throw values')
+    no_takes = NumberFilter(name='no_takes',
+                            label='filter if value is equal to no_takes')
+    totd_label = 'filter if value is equal to take_of_the_day'
+    take_of_the_day = NumberFilter(name='take_of_the_day', label=totd_label)
+    take_malus = NumberFilter(name='take_malus',
+                              label='filter if value is equal to take_malus')
+    throw = NumberFilter(name='throw',
+                         label='filter if value is equal to throw')
 
     class Meta:
         model = CupPolicy
@@ -65,6 +69,8 @@ class CupPolicyFilter(FilterSet):
             'name',
             'comment',
             'user',
-            'take',
+            'no_takes',
+            'take_of_the_day',
+            'take_malus',
             'throw',
         )
