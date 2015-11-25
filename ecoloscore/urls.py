@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^checkpoints/', include('checkpoints.urls')),
     url(r'^coffeecups/', include('coffeecups.urls')),
     url(r'^score/', include('score.urls')),
+
+    url(r'^docs/', include('rest_framework_swagger.urls')),
 ]
 
 # webmin
