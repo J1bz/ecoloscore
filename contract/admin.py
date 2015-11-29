@@ -7,6 +7,43 @@ from contract.models import (
     BoundedValueContract, BoundedValueContractForm,
     )
 
+from score.models import Score
+
+
+def evaluate(modeladmin, request, queryset):
+    queryset.update(evaluated=False)
+    for contract in queryset.all():
+        if contract.observation is not None:
+            evaluation = contract.check_obs()
+            if evaluation not in ['ok', 'partial', 'ko']:
+                # something went wrong
+                break
+
+            else:
+                if evaluation == 'ok':
+                    score = contract.policy.respected_bonus
+
+                elif evaluation == 'partial':
+                    score = contract.policy.partial_bonus
+
+                else:
+                    score = contract.policy.unrespected_malus
+
+                concerned_users = []
+                for user in contract.u_subjects.all():
+                    concerned_users.append(user)
+
+                for group in contract.g_subjects.all():
+                    for user in group.user_set.all():
+                        if user not in concerned_users:
+                            concerned_users.append(user)
+
+                for user in concerned_users:
+                    Score(user=user, value=score, game='t').save()
+
+            contract.evaluated = True
+            contract.save()
+
 
 class ContractPolicyAdmin(admin.ModelAdmin):
     form = ContractPolicyForm
@@ -25,6 +62,7 @@ class ContractPolicyAdmin(admin.ModelAdmin):
         'partial_bonus',
         'unrespected_malus',
     )
+    actions = [evaluate]
 
 
 class ValueContractAdmin(admin.ModelAdmin):
@@ -42,6 +80,7 @@ class ValueContractAdmin(admin.ModelAdmin):
         'comment',
         'policy__name',
     )
+    actions = [evaluate]
 
     def subjects_list(self, contract):
         subjects = ''
@@ -73,6 +112,7 @@ class BoundedValueContractAdmin(admin.ModelAdmin):
         'comment',
         'policy__name',
     )
+    actions = [evaluate]
 
     def subjects_list(self, contract):
         subjects = ''
@@ -87,6 +127,7 @@ class BoundedValueContractAdmin(admin.ModelAdmin):
             subjects += 'group: {}, '.format(group.name)
 
         return subjects.strip()
+
 
 admin.site.register(ContractPolicy, ContractPolicyAdmin)
 admin.site.register(ValueGreaterContract, ValueContractAdmin)

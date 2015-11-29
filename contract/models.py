@@ -39,10 +39,6 @@ class AbstractContract(Model):
     g_subjects = ManyToManyField(Group, blank=True)
     comment = TextField(blank=True)
 
-    # objective_ube = IntegerField()
-    # objective_lb = IntegerField(blank=True)
-    # partial_ube = IntegerField()
-    # partial_lb = IntegerField(blank=True)
     policy = ForeignKey(ContractPolicy)
 
     start_period = DateTimeField()
@@ -62,10 +58,30 @@ class ValueGreaterContract(AbstractContract):
     value = IntegerField()
     partial = IntegerField()
 
+    def check_obs(self):
+        if self.observation > self.value:
+            return 'ok'
+
+        elif self.observation > self.partial:
+            return 'partial'
+
+        else:
+            return 'ko'
+
 
 class ValueLowerContract(AbstractContract):
     value = IntegerField()
     partial = IntegerField()
+
+    def check_obs(self):
+        if self.observation < self.value:
+            return 'ok'
+
+        elif self.observation < self.partial:
+            return 'partial'
+
+        else:
+            return 'ko'
 
 
 class ValueContractForm(ModelForm):
@@ -90,6 +106,19 @@ class BoundedValueContract(AbstractContract):
     lower_bound = IntegerField()
     partial_upper_bound = IntegerField()
     partial_lower_bound = IntegerField()
+
+    def check_obs(self):
+        obs = self.observation
+
+        if self.upper_bound > obs and obs > self.lower_bound:
+            return 'ok'
+
+        elif (self.partial_upper_bound > obs and
+              obs > self.partial_lower_bound):
+            return 'partial'
+
+        else:
+            return 'ko'
 
 
 class BoundedValueContractForm(ModelForm):
