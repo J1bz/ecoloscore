@@ -44,7 +44,6 @@ INSTALLED_APPS = (
     'rest_framework_swagger',
     'corsheaders',
     'users',
-    'common',
     'ecoauth',
     'checkpoints',
     'coffeecups',
@@ -126,7 +125,7 @@ MEDIA_URL = '/media/'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
-        'common.permissions.IsAdminOrAuthentReadOnly',
+        'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
