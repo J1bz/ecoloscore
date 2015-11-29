@@ -4,6 +4,7 @@ from rest_framework.authentication import (
     TokenAuthentication, SessionAuthentication)
 from rest_framework.decorators import (
     authentication_classes, permission_classes)
+from rest_framework.parsers import FormParser, MultiPartParser
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.filters import DjangoFilterBackend, SearchFilter
 from rest_framework.response import Response
@@ -58,6 +59,7 @@ class UserView(ModelViewSet):
 class ProfileView(ModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
+    parser_classes = (FormParser, MultiPartParser,)
     filter_backends = (DjangoFilterBackend, SearchFilter,)
     search_fields = ('user__username', 'rfid_tag', 'favorite_song',)
     filter_class = ProfileFilter
