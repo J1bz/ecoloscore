@@ -118,6 +118,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = '/media/'
+
+MEDIA_URL = '/media/'
+
 # rest framework configuration
 
 REST_FRAMEWORK = {
