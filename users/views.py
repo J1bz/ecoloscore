@@ -5,7 +5,9 @@ from rest_framework.authentication import (
 from rest_framework.decorators import (
     authentication_classes, permission_classes)
 from rest_framework.parsers import FormParser, MultiPartParser
-from rest_framework.viewsets import ModelViewSet
+from rest_framework.viewsets import GenericViewSet
+from rest_framework.mixins import (
+    ListModelMixin, RetrieveModelMixin, UpdateModelMixin)
 from rest_framework.filters import DjangoFilterBackend, SearchFilter
 from rest_framework.response import Response
 from rest_framework.status import HTTP_401_UNAUTHORIZED
@@ -20,7 +22,10 @@ from users.filters import UserFilter, ProfileFilter
 
 @authentication_classes((TokenAuthentication, SessionAuthentication,))
 @permission_classes((UpdateUserIfSelfOrReadOnly,))
-class UserView(ModelViewSet):
+class UserView(GenericViewSet,
+               ListModelMixin,
+               RetrieveModelMixin,
+               UpdateModelMixin):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     filter_backends = (DjangoFilterBackend, SearchFilter,)
@@ -56,7 +61,10 @@ class UserView(ModelViewSet):
 
 @authentication_classes((TokenAuthentication, SessionAuthentication,))
 @permission_classes((UpdateProfileIfOwnerOrReadOnly,))
-class ProfileView(ModelViewSet):
+class ProfileView(GenericViewSet,
+                  ListModelMixin,
+                  RetrieveModelMixin,
+                  UpdateModelMixin):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
     parser_classes = (FormParser, MultiPartParser,)
