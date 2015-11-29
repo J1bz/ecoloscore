@@ -12,6 +12,7 @@ class Score(Model):
     GAMES = (
         ('p', 'checkpoints'),
         ('c', 'coffeecups'),
+        ('t', 'contracts'),
     )
 
     user = ForeignKey(User)
