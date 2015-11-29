@@ -83,3 +83,29 @@ class ValueContractForm(ModelForm):
             'observation',
             'observation_date',
         )
+
+
+class BoundedValueContract(AbstractContract):
+    upper_bound = IntegerField()
+    lower_bound = IntegerField()
+    partial_upper_bound = IntegerField()
+    partial_lower_bound = IntegerField()
+
+
+class BoundedValueContractForm(ModelForm):
+    class Meta:
+        model = BoundedValueContract
+        fields = (
+            'u_subjects',
+            'g_subjects',
+            'comment',
+            'upper_bound',
+            'lower_bound',
+            'partial_upper_bound',
+            'partial_lower_bound',
+            'policy',
+            'start_period',
+            'end_period',
+            'observation',
+            'observation_date',
+        )
