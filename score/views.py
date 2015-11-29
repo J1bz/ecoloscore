@@ -2,20 +2,20 @@
 
 from rest_framework.authentication import (
     TokenAuthentication, SessionAuthentication)
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import (
     authentication_classes, permission_classes)
-from rest_framework.viewsets import ModelViewSet
+from rest_framework.viewsets import ReadOnlyModelViewSet
 from rest_framework.filters import DjangoFilterBackend, SearchFilter
 
-from common.permissions import IsAdminOrAuthentReadOnly
 from score.models import Score, CurrentScore
 from score.serializers import ScoreSerializer, CurrentScoreSerializer
 from score.filters import ScoreFilter, CurrentScoreFilter
 
 
 @authentication_classes((TokenAuthentication, SessionAuthentication,))
-@permission_classes((IsAdminOrAuthentReadOnly,))
-class ScoreView(ModelViewSet):
+@permission_classes((IsAuthenticated,))
+class ScoreView(ReadOnlyModelViewSet):
     queryset = Score.objects.all()
     serializer_class = ScoreSerializer
     filter_backends = (DjangoFilterBackend, SearchFilter,)
@@ -24,8 +24,8 @@ class ScoreView(ModelViewSet):
 
 
 @authentication_classes((TokenAuthentication, SessionAuthentication,))
-@permission_classes((IsAdminOrAuthentReadOnly,))
-class CurrentScoreView(ModelViewSet):
+@permission_classes((IsAuthenticated,))
+class CurrentScoreView(ReadOnlyModelViewSet):
     queryset = CurrentScore.objects.all()
     serializer_class = CurrentScoreSerializer
     filter_backends = (DjangoFilterBackend,)
