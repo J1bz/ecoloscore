@@ -49,11 +49,11 @@ INSTALLED_APPS = (
     'checkpoints',
     'coffeecups',
     'score',
+    'contract',
 )
 
 MIDDLEWARE_CLASSES = (
     'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -118,7 +118,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = '/media/'
+MEDIA_ROOT = '/ABSOLUTE/PATH/TO/media/'
 
 MEDIA_URL = '/media/'
 
