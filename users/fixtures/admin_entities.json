@@ -1,0 +1,92 @@
+[
+  {
+    "model": "auth.User",
+    "pk": 1,
+    "fields": {
+      "username": "root",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE=",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 2,
+    "fields": {
+      "username": "admin2",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE=",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 3,
+    "fields": {
+      "username": "admin3",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE=",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 4,
+    "fields": {
+      "username": "admin4",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE=",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 5,
+    "fields": {
+      "username": "admin5",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE=",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 6,
+    "fields": {
+      "username": "admin6",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE=",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 7,
+    "fields": {
+      "username": "admin7",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE=",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 8,
+    "fields": {
+      "username": "admin8",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE=",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 9,
+    "fields": {
+      "username": "admin9",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE=",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  }
+]

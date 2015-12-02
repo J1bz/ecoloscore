@@ -1,0 +1,87 @@
+[
+  {
+    "model": "auth.User",
+    "pk": 10,
+    "fields": {
+      "username": "jbb",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE="
+    }
+  },
+  {
+    "model": "users.Profile",
+    "pk": 1,
+    "fields": {
+      "user": 10,
+      "rfid_tag": "EEC1BC16",
+      "favorite_song": null
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 11,
+    "fields": {
+      "username": "nisrine",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE="
+    }
+  },
+  {
+    "model": "users.Profile",
+    "pk": 2,
+    "fields": {
+      "user": 11,
+      "rfid_tag": "2EF5C116",
+      "favorite_song": null
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 12,
+    "fields": {
+      "username": "thib",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE="
+    }
+  },
+  {
+    "model": "users.Profile",
+    "pk": 3,
+    "fields": {
+      "user": 12,
+      "rfid_tag": "0EAC8216",
+      "favorite_song": null
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 13,
+    "fields": {
+      "username": "alex",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE="
+    }
+  },
+  {
+    "model": "users.Profile",
+    "pk": 4,
+    "fields": {
+      "user": 13,
+      "rfid_tag": "F22E98BD",
+      "favorite_song": null
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 14,
+    "fields": {
+      "username": "anthony",
+      "password": "pbkdf2_sha256$20000$Jp5utATF9RcG$VGZIjd8a6TyKpkxRTwhtSQQry021nHfbakChdmD37JE="
+    }
+  },
+  {
+    "model": "users.Profile",
+    "pk": 5,
+    "fields": {
+      "user": 14,
+      "rfid_tag": "82FE96BD",
+      "favorite_song": null
+    }
+  }
+]
