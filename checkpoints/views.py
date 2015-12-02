@@ -7,7 +7,7 @@ from rest_framework.decorators import (
     authentication_classes, permission_classes)
 from rest_framework.viewsets import GenericViewSet, ReadOnlyModelViewSet
 from rest_framework.mixins import (
-    ListModelMixin, RetrieveModelMixin, UpdateModelMixin)
+    ListModelMixin, RetrieveModelMixin, CreateModelMixin)
 from rest_framework.filters import DjangoFilterBackend, SearchFilter
 
 from common.permissions import IsAdminOrAuthentReadOnly
@@ -31,7 +31,7 @@ class PointView(ReadOnlyModelViewSet):
 class CheckView(GenericViewSet,
                 ListModelMixin,
                 RetrieveModelMixin,
-                UpdateModelMixin):
+                CreateModelMixin):
     queryset = Check.objects.all()
     serializer_class = CheckSerializer
     filter_backends = (DjangoFilterBackend, SearchFilter,)

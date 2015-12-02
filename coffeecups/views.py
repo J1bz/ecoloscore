@@ -7,7 +7,7 @@ from rest_framework.decorators import (
     authentication_classes, permission_classes)
 from rest_framework.viewsets import GenericViewSet, ReadOnlyModelViewSet
 from rest_framework.mixins import (
-    ListModelMixin, RetrieveModelMixin, UpdateModelMixin)
+    ListModelMixin, RetrieveModelMixin, CreateModelMixin)
 from rest_framework.filters import DjangoFilterBackend, SearchFilter
 
 from common.permissions import IsAdminOrAuthentReadOnly
@@ -22,7 +22,7 @@ from coffeecups.filters import TakeFilter, ThrowFilter, CupPolicyFilter
 class TakeView(GenericViewSet,
                ListModelMixin,
                RetrieveModelMixin,
-               UpdateModelMixin):
+               CreateModelMixin):
     queryset = Take.objects.all()
     serializer_class = TakeSerializer
     filter_backends = (DjangoFilterBackend,)
@@ -34,7 +34,7 @@ class TakeView(GenericViewSet,
 class ThrowView(GenericViewSet,
                 ListModelMixin,
                 RetrieveModelMixin,
-                UpdateModelMixin):
+                CreateModelMixin):
     queryset = Throw.objects.all()
     serializer_class = ThrowSerializer
     filter_backends = (DjangoFilterBackend,)
