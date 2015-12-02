@@ -5,9 +5,12 @@ from rest_framework.authentication import (
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import (
     authentication_classes, permission_classes)
-from rest_framework.viewsets import ReadOnlyModelViewSet
+from rest_framework.viewsets import GenericViewSet, ReadOnlyModelViewSet
+from rest_framework.mixins import (
+    ListModelMixin, RetrieveModelMixin, UpdateModelMixin)
 from rest_framework.filters import DjangoFilterBackend, SearchFilter
 
+from common.permissions import IsAdminOrAuthentReadOnly
 from coffeecups.models import Take, Throw, CupPolicy
 from coffeecups.serializers import (
     TakeSerializer, ThrowSerializer, CupPolicySerializer)
@@ -15,8 +18,11 @@ from coffeecups.filters import TakeFilter, ThrowFilter, CupPolicyFilter
 
 
 @authentication_classes((TokenAuthentication, SessionAuthentication,))
-@permission_classes((IsAuthenticated,))
-class TakeView(ReadOnlyModelViewSet):
+@permission_classes((IsAdminOrAuthentReadOnly,))
+class TakeView(GenericViewSet,
+               ListModelMixin,
+               RetrieveModelMixin,
+               UpdateModelMixin):
     queryset = Take.objects.all()
     serializer_class = TakeSerializer
     filter_backends = (DjangoFilterBackend,)
@@ -24,8 +30,11 @@ class TakeView(ReadOnlyModelViewSet):
 
 
 @authentication_classes((TokenAuthentication, SessionAuthentication,))
-@permission_classes((IsAuthenticated,))
-class ThrowView(ReadOnlyModelViewSet):
+@permission_classes((IsAdminOrAuthentReadOnly,))
+class ThrowView(GenericViewSet,
+                ListModelMixin,
+                RetrieveModelMixin,
+                UpdateModelMixin):
     queryset = Throw.objects.all()
     serializer_class = ThrowSerializer
     filter_backends = (DjangoFilterBackend,)

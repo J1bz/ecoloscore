@@ -5,9 +5,12 @@ from rest_framework.authentication import (
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import (
     authentication_classes, permission_classes)
-from rest_framework.viewsets import ReadOnlyModelViewSet
+from rest_framework.viewsets import GenericViewSet, ReadOnlyModelViewSet
+from rest_framework.mixins import (
+    ListModelMixin, RetrieveModelMixin, UpdateModelMixin)
 from rest_framework.filters import DjangoFilterBackend, SearchFilter
 
+from common.permissions import IsAdminOrAuthentReadOnly
 from checkpoints.models import Point, Check
 from checkpoints.serializers import PointSerializer, CheckSerializer
 from checkpoints.filters import PointFilter, CheckFilter
@@ -24,8 +27,11 @@ class PointView(ReadOnlyModelViewSet):
 
 
 @authentication_classes((TokenAuthentication, SessionAuthentication,))
-@permission_classes((IsAuthenticated,))
-class CheckView(ReadOnlyModelViewSet):
+@permission_classes((IsAdminOrAuthentReadOnly,))
+class CheckView(GenericViewSet,
+                ListModelMixin,
+                RetrieveModelMixin,
+                UpdateModelMixin):
     queryset = Check.objects.all()
     serializer_class = CheckSerializer
     filter_backends = (DjangoFilterBackend, SearchFilter,)

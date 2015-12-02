@@ -49,6 +49,7 @@ INSTALLED_APPS = (
     'coffeecups',
     'score',
     'contract',
+    'common',
 )
 
 MIDDLEWARE_CLASSES = (
