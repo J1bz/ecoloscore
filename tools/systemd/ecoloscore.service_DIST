@@ -1,0 +1,10 @@
+[Unit]
+Description=Ecoloscore
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/PATH/TO/WORKING/DIR/
+ExecStart=/usr/bin/python /PATH/TO/WORKING/DIR/ecoloscore.py
+StandardOutput=syslog
+StandardError=syslog
