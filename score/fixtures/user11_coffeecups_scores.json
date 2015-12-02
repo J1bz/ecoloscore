@@ -1,0 +1,452 @@
+[
+  {
+    "pk": 208,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-01T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 209,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-01T11:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 210,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-02T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 211,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-02T16:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": -150
+    }
+  },
+  {
+    "pk": 212,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-02T11:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 213,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-02T17:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 214,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-05T00:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 105
+    }
+  },
+  {
+    "pk": 215,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-06T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 216,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-06T16:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": -150
+    }
+  },
+  {
+    "pk": 217,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-06T11:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 218,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-06T17:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 219,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-07T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 220,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-07T16:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": -150
+    }
+  },
+  {
+    "pk": 221,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-08T00:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 105
+    }
+  },
+  {
+    "pk": 222,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-09T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 223,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-12T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 224,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-12T16:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": -150
+    }
+  },
+  {
+    "pk": 225,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-13T00:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 105
+    }
+  },
+  {
+    "pk": 226,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-14T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 227,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-14T16:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": -150
+    }
+  },
+  {
+    "pk": 228,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-14T11:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 229,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-14T17:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 230,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-15T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 231,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-16T00:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 105
+    }
+  },
+  {
+    "pk": 232,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-19T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 233,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-20T00:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 105
+    }
+  },
+  {
+    "pk": 234,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-21T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 235,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-22T00:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 105
+    }
+  },
+  {
+    "pk": 236,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-23T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 237,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-23T16:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": -150
+    }
+  },
+  {
+    "pk": 238,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-23T11:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 239,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-23T17:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 240,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-26T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 241,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-26T16:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": -150
+    }
+  },
+  {
+    "pk": 242,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-26T11:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 243,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-26T17:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 244,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-27T00:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 105
+    }
+  },
+  {
+    "pk": 245,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-28T00:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 105
+    }
+  },
+  {
+    "pk": 246,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-29T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 247,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-29T16:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": -150
+    }
+  },
+  {
+    "pk": 248,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-29T11:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 249,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-29T17:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 250,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-30T10:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  },
+  {
+    "pk": 251,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-30T16:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": -150
+    }
+  },
+  {
+    "pk": 252,
+    "model": "score.Score",
+    "fields": {
+      "date": "2015-10-30T17:00:00Z",
+      "game": "c",
+      "user": 11,
+      "value": 50
+    }
+  }
+]

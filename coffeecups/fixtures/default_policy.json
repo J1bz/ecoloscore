@@ -1,0 +1,15 @@
+[
+  {
+    "model": "coffeecups.CupPolicy",
+    "pk": 1,
+    "fields": {
+      "name": "default",
+      "comment": "Default coffeecups policy for all users",
+      "users": [10, 11, 12, 13, 14],
+      "no_takes": 105,
+      "take_of_the_day": 50,
+      "take_malus": -150,
+      "throw": 50
+    }
+  }
+]

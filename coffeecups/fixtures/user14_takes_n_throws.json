@@ -1,0 +1,410 @@
+[
+  {
+    "model": "coffeecups.Take",
+    "pk": 56,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 57,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-01T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 42,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-01T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 58,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-02T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 59,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-02T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 43,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-02T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 60,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-05T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 61,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-05T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 44,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-05T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 62,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-06T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 63,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-06T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 45,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-06T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 64,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-07T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 65,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-07T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 46,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-07T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 65,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 66,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-08T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 47,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-08T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 67,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-09T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 68,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-09T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 48,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-09T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 69,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-12T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 70,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-12T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 49,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-12T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 71,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-13T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 73,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-13T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 50,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-13T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 74,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-14T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 75,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-14T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 51,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-14T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 76,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 77,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-15T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 52,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-15T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 78,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 79,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-16T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 53,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-16T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 80,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 81,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-19T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 54,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-19T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 82,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 83,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-20T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 55,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-20T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 84,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 85,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-21T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 56,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-21T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 86,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 87,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-22T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 57,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-22T14:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 88,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-23T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 89,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-23T13:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 58,
+    "fields": {
+      "user": 14,
+      "date": "2015-10-23T14:00:00Z"
+    }
+  }
+]

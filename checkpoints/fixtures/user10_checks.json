@@ -1,0 +1,155 @@
+[
+  {
+    "model": "checkpoints.Check",
+    "pk": 1,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 2,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-02T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 3,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-05T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 4,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-06T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 5,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-07T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 6,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 7,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-09T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 8,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-12T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 9,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-13T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-14T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 11,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 12,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 13,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 14,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 15,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 16,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "checkpoints.Check",
+    "pk": 17,
+    "fields": {
+      "user": 10,
+      "point": 1,
+      "date": "2015-10-23T10:00:00Z"
+    }
+  }
+]

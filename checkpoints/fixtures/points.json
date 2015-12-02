@@ -1,0 +1,32 @@
+[
+  {
+    "model": "checkpoints.Point",
+    "pk": 1,
+    "fields": {
+      "name": "point_A",
+      "comment": "Stairs to go from the first to the second floor near to the reception desk",
+      "arduino": "ZXP32K",
+      "bonus": "50"
+    }
+  },
+  {
+    "model": "checkpoints.Point",
+    "pk": 2,
+    "fields": {
+      "name": "point_B",
+      "comment": "Stairs to go from the first to the second floor at the end of the main corridor",
+      "arduino": "B27K89",
+      "bonus": "75"
+    }
+  },
+  {
+    "model": "checkpoints.Point",
+    "pk": 3,
+    "fields": {
+      "name": "point_C",
+      "comment": "Stairs to go from the second to the third floor (very hard !)",
+      "arduino": "51VG0WX",
+      "bonus": "100"
+    }
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "model": "coffeecups.Take",
+    "pk": 24,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 15,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-01T11:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 25,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-02T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 26,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-06T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 27,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 16,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-08T11:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 28,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-13T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 17,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-13T11:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 29,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 30,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 18,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-19T11:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 31,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 32,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-29T10:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Throw",
+    "pk": 19,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-29T11:00:00Z"
+    }
+  },
+  {
+    "model": "coffeecups.Take",
+    "pk": 33,
+    "fields": {
+      "user": 12,
+      "date": "2015-10-30T10:00:00Z"
+    }
+  }
+]
