@@ -19,6 +19,11 @@ from checkpoints.filters import PointFilter, CheckFilter
 @authentication_classes((TokenAuthentication, SessionAuthentication,))
 @permission_classes((IsAuthenticated,))
 class PointView(ReadOnlyModelViewSet):
+    """
+    Each point is a record for an arduino station graunting you score points
+    for tagging it with your RFID device.
+    """
+
     queryset = Point.objects.all()
     serializer_class = PointSerializer
     filter_backends = (DjangoFilterBackend, SearchFilter,)
@@ -32,6 +37,14 @@ class CheckView(GenericViewSet,
                 ListModelMixin,
                 RetrieveModelMixin,
                 CreateModelMixin):
+    """
+    A check is an association of a player being at a given point at a given
+    time.
+
+    A Check creation triggers record of a Score entry for the deserved amount
+    of points and for game `p` (checkPoints).
+    """
+
     queryset = Check.objects.all()
     serializer_class = CheckSerializer
     filter_backends = (DjangoFilterBackend, SearchFilter,)
