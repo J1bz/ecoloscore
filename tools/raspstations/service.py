@@ -14,22 +14,28 @@ from conf import TAG_REGEX, DEVICE, ARDUINOS, SCREEN
 def handle_checkpoint(rfid_tag, arduino_id, api_auth_header):
     if SCREEN['ENABLED'] is True:
         requests.get(SCREEN['URL'])
+
     user_id = get_user_id(rfid_tag, api_auth_header)
-    check_position(user_id, arduino_id, api_auth_header)
+    if user_id is not None:
+        check_position(user_id, arduino_id, api_auth_header)
 
 
 def handle_take(rfid_tag, api_auth_header):
     if SCREEN['ENABLED'] is True:
         requests.get(SCREEN['URL'])
+
     user_id = get_user_id(rfid_tag, api_auth_header)
-    take_cup(user_id, api_auth_header)
+    if user_id is not None:
+        take_cup(user_id, api_auth_header)
 
 
 def handle_throw(rfid_tag, api_auth_header):
     if SCREEN['ENABLED'] is True:
         requests.get(SCREEN['URL'])
+
     user_id = get_user_id(rfid_tag, api_auth_header)
-    throw_cup(user_id, api_auth_header)
+    if user_id is not None:
+        throw_cup(user_id, api_auth_header)
 
 
 def start_service(serial_port, tag_c_regex, api_auth_header):

@@ -34,11 +34,14 @@ def get_user_id(tag, auth_header):
     r = requests.get(url_user_id, headers=auth_header)
     r_json = loads(r.content)
     if r_json:
-        user_id = r_json[0]['user']
-        return user_id
+        try:
+            user_id = r_json[0]['user']
+            return user_id
 
-    else:
-        return None
+        except:
+            pass
+
+    return None
 
 
 def check_position(user_id, arduino_id, auth_header):
