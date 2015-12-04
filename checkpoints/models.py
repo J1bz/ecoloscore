@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from datetime import datetime, timedelta
+
 from django.db.models import (Model, ForeignKey, CharField, TextField,
                               DateTimeField, IntegerField)
 from django.forms import ModelForm, CharField as formCharField, Textarea
@@ -51,11 +53,25 @@ class Check(Model):
         """
         A Check creation triggers record of a Score entry for the deserved
         amount of points and for game `p` (checkPoints).
+
+        Two consecutive checks cannot be recorded for the same user at the
+        same point if there is not at least a 30 seconds time difference.
+        It prevents users from cheating/checking twice. This should NOT be
+        tested here. It should be done by a raspberry or an arduino station.
+        But since we run out of time...
         """
 
-        Score(user=self.user, value=self.point.bonus, game='p').save()
+        now = datetime.now()
+        thirty_seconds = timedelta(seconds=30)
 
-        super(Check, self).save(*args, **kwargs)
+        recent_check = Check.objects.filter(user=self.user,
+                                            point=self.point,
+                                            date__gte=(now - thirty_seconds))
+
+        if not recent_check:
+            Score(user=self.user, value=self.point.bonus, game='p').save()
+
+            super(Check, self).save(*args, **kwargs)
 
     def __unicode__(self):
         return '{} checked {} at {}'.format(self.user, self.point, self.date)
