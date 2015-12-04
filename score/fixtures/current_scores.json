@@ -1,0 +1,42 @@
+[
+  {
+    "pk": 1,
+    "model": "score.CurrentScore",
+    "fields": {
+      "user": 10,
+      "value": 3160
+    }
+  },
+  {
+    "pk": 2,
+    "model": "score.CurrentScore",
+    "fields": {
+      "user": 11,
+      "value": 3640
+    }
+  },
+  {
+    "pk": 3,
+    "model": "score.CurrentScore",
+    "fields": {
+      "user": 12,
+      "value": 3635
+    }
+  },
+  {
+    "pk": 4,
+    "model": "score.CurrentScore",
+    "fields": {
+      "user": 13,
+      "value": 7150
+    }
+  },
+  {
+    "pk": 5,
+    "model": "score.CurrentScore",
+    "fields": {
+      "user": 14,
+      "value": 2375
+    }
+  }
+]
