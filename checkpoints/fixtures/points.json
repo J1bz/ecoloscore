@@ -5,7 +5,7 @@
     "fields": {
       "name": "point_A",
       "comment": "Stairs to go from the first to the second floor near to the reception desk",
-      "arduino": "ZXP32K",
+      "arduino": "1",
       "bonus": "50"
     }
   },
@@ -15,7 +15,7 @@
     "fields": {
       "name": "point_B",
       "comment": "Stairs to go from the first to the second floor at the end of the main corridor",
-      "arduino": "B27K89",
+      "arduino": "2",
       "bonus": "75"
     }
   },
@@ -25,7 +25,7 @@
     "fields": {
       "name": "point_C",
       "comment": "Stairs to go from the second to the third floor (very hard !)",
-      "arduino": "51VG0WX",
+      "arduino": "NOT_USED_DURING_DEMONSTRATION",
       "bonus": "100"
     }
   }
